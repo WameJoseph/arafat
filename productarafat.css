@@ -1,5 +1,5 @@
 body{margin: 0; padding: 0;}
-*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; text-decoration: none;}
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; text-decoration: none; scroll-behavior: smooth;}
 header{width: 100%; padding: 15px 6%; display: flex; justify-content: space-between; align-items: center; 
     box-shadow: 1px 5px 10px rgba(79, 79, 79, 0.5);  background: white;
     position: sticky; top: 0;}
@@ -79,18 +79,18 @@ main .sc2{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 7% 0;
+    padding: 13% 0;
 }
 
 main .sc2 .image{
-    width: 30%;
+    width: 400px;
     /* height: 100%; */
     /* border: solid 1px; */
     padding-right: 6%;
     background-image: url(pexels-zachary-debottis-1769557.jpg);
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: 500px;
 }
 
 main .sc2 .text{
@@ -101,11 +101,142 @@ main .sc2 .text{
 main .sc2 .text h3{
     width: 100%;
     text-align: left;
-    color: #c2c2c2;
+    color: #b3b3b3;
     /* font-weight: 600; */
     font-size: 16px;
     margin-bottom: 5%;
 }
+
+main .sec3{
+    width: 100%;
+    height: fit-content;
+    /* border: solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 60px 0;
+    background: rgb(0, 0, 255, 0.3);
+}
+
+main .sec3 h2{
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+main .sec3 .projects{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid 1px; */
+    /* border-top: solid 1px; */
+    /* border-bottom: solid 1px; */
+    margin-top: 0%;
+    height: 100%;
+    flex-wrap: wrap;
+    
+}
+
+main .sec3 .projects a{
+    display: flex; justify-content: center; align-items: center;
+    flex-direction: column; 
+    width: 230px; height: 240px;
+    /* border: solid 1px; */
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 18px 23px rgba(0, 0, 0, 0.74);  transition: 200ms;
+    margin-top: 7%;
+    padding: 8px;
+}
+
+main .sec3 .projects a:hover{
+    box-shadow: 16px 28px 1px rgba(65, 65, 65, 0.74); 
+}
+
+main .sec3 .projects a .sp{
+    width: 100%;
+    height: 100%;
+    /* border: solid 1px; */
+}
+
+main .sec3 .projects a .sp .sp1{
+    display: flex;
+    width: 100%;
+    height: 75%;
+    border-radius: 5px;
+    background-image: url(Screenshot\ \(130\).png);  background-size: cover; background-repeat: no-repeat; background-position: center;
+    /* background: blue; */
+}
+
+main .sec3 .projects a .sp .sp2{
+    display: flex;
+    flex-direction: column;
+    justify-content: left; align-items: flex-start;
+    width: 100%;
+    height: 25%;
+    /* background: blue; */
+    padding-top: 5px;
+}
+
+main .sec3 .projects a .sp .sp2 h3{
+    color: black; letter-spacing: 1.3px; margin-top: 3px;
+}
+
+main .sec3 .projects a .sp .sp2 p{
+    color: black;
+    width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+   font-size: 14px;
+    margin-top: -3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .sec3 .fullprojects{
+    border: solid 2px black;
+    width: 230px;
+    height: 55px;
+    margin-top: 130px;
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-between; align-items: center;
+    color: black;
+    box-shadow: 13px 10px rgb(0, 0, 255, 0.3); transition: 150ms;
+}
+
+main .sec3 .fullprojects:hover{
+    width: 235px;
+    height: 55px;
+    margin-top: 7%;
+    padding: 0 15px;
+    box-shadow: 17px 15px rgb(0, 0, 255, 0.3);
+}
+
+
 
 
 
@@ -181,6 +312,45 @@ main .sc2 .text h3{
         letter-spacing: 2px; font-weight: 500;
         box-shadow: 7px 7px #ffffffa8; transition: 400ms;
     }
+
+    main .sc2{
+        /* border: solid 1px; */
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 13% 0;
+    }
+
+    main .sc2 .image{
+        width: 60%;
+        /* height: 100%; */
+        /* border: solid 1px; */
+        padding-right: 6%;
+        background-image: url(pexels-zachary-debottis-1769557.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+    }
+    
+    main .sc2 .text{
+        width: 60%;
+        padding: 0 0%;
+        margin: 0 auto;
+        margin-top: 5%;
+        /* border: solid 1px; */
+    }
+    
+    main .sc2 .text h3{
+        width: 100%;
+        text-align: left;
+        color: #b3b3b3;
+        /* font-weight: 600; */
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -209,5 +379,98 @@ main .sc2 .text h3{
         color: white; font-size: 16px;
         letter-spacing: 2px; font-weight: 500;
         box-shadow: 7px 7px #ffffffa8; transition: 400ms;
+    }
+
+    main .sc2{
+        /* border: solid 1px; */
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 13% 0;
+    }
+
+    main .sc2 .image{
+        width: 85%;
+        /* height: 100%; */
+        /* border: solid 1px; */
+        padding-right: 6%;
+        background-image: url(pexels-zachary-debottis-1769557.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+    }
+    
+    main .sc2 .text{
+        width: 85%;
+        /* padding: 0 5%; */
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-right: auto;
+        /* margin-left: 5%; */
+        /* border: solid 1px; */
+    }
+    
+    main .sc2 .text h3{
+        width: 100%;
+        text-align: left;
+        color: #b3b3b3;
+        /* font-weight: 600; */
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    main .sc2{
+        /* border: solid 1px; */
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 13% 0;
+    }
+
+    main .sc2 .image{
+        width: 90%;
+        /* height: 100%; */
+        /* border: solid 1px; */
+        padding-right: 6%;
+        background-image: url(pexels-zachary-debottis-1769557.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 450px;
+    }
+    
+    main .sc2 .text{
+        width: 90%;
+        /* padding: 0 5%; */
+        /* margin: 0 auto; */
+        margin-top: 15%;
+        margin-right: auto;
+        margin-left: 5%;
+        /* border: solid 1px; */
+    }
+    
+    main .sc2 .text h3{
+        width: 100%;
+        text-align: left;
+        color: #b3b3b3;
+        /* font-weight: 600; */
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+    main .sec3 .projects a{
+        margin-top: 15%;
     }
 }
