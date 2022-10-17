@@ -23,7 +23,7 @@ header .sp2 .home{border-bottom: solid 2px; }
 
 header .sp2 a:hover{border-bottom: solid 3px;}
 
-header .touch{padding: 9px 20px; border: solid 2px; color: black; font-size: 14px; transition: ease-in 130ms; font-weight: 500;}
+header .touch{padding: 9px 20px; border: solid 2px; color: black; font-size: 14px; transition: ease 150ms; font-weight: 500;}
 
 
 header .touch:hover{background: black; color: white; margin-top: -10px; border: solid 2px rgb(77, 77, 77);}
@@ -69,7 +69,7 @@ main .sc1 a:hover{
     /* border: solid 1px rgb(0, 0, 255, 0.3); */
     /* box-shadow: 6px 6px #ffffffcd;  */
     font-weight: 600;
-    box-shadow: 5px 5px #ffffffa8;
+    box-shadow: 10px 10px #ffffffa8;
 }
 
 main .sc2{
@@ -115,18 +115,19 @@ main .sec3{
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    padding: 60px 0;
+    padding: 50px 0;
     background: rgb(0, 0, 255, 0.3);
 }
 
 main .sec3 h2{
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 32px;
 }
 
 main .sec3 .projects{
     display: flex;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
@@ -166,8 +167,12 @@ main .sec3 .projects a .sp .sp1{
     width: 100%;
     height: 75%;
     border-radius: 5px;
-    background-image: url(Screenshot\ \(130\).png);  background-size: cover; background-repeat: no-repeat; background-position: center;
+    background-image: url(Screenshot\ \(130\).png);  background-size: cover; background-repeat: no-repeat; background-position: center; transition: 150ms;
     /* background: blue; */
+}
+
+main .sec3 .projects a .sp .sp1:hover{
+    transform: scale(1.03);
 }
 
 main .sec3 .projects a .sp .sp2{
@@ -211,12 +216,128 @@ main .sec3 .fullprojects:hover{
 }
 
 main .sec4{
+    height: fit-content; width: 100%;
+    /* border: solid 1px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 60px 0 15px 0 ;
+    /* justify-content: center; */
+}
+
+main .sec4 h2{
+    font-weight: 200;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: auto;
+    margin: 0 10px;
+}
+
+main .sec4 h2 span{
+    font-weight: 600;
+    font-size: 27px;
+}
+
+main .sec4 .points{
+    display: flex;
+    width: 90%; height: fit-content;
+    flex-wrap: wrap; 
+    justify-content: space-around; margin-top: 100px;
+}
+
+main .sec4 .points span{
+    display: flex;
+    width: 350px; height: 240px;
+    flex-direction: column; align-items: flex-start;
+    flex-wrap: wrap; 
+    /* border: solid 1px; */
+    margin-top: 0; padding: 10px 0;
+}
+
+main .sec4 .points span img{
+    width: 30px; 
+    height: 30px;
+}
+
+main .sec4 .points span h3{
+    width: 95%;
+    letter-spacing: 1.5px; 
+    margin-top: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+main .sec4 .points span p{
+    width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    /* color: rgb(0, 0, 0, 0.9); */
+    /* letter-spacing: 2px;  */
+    /* margin-top: 20px;  */
+    /* overflow: hidden; text-overflow: ellipsis; white-space: nowrap; */
+    /* font-weight: 600; */
+}
+
+main .sec5{
+    width: 100%;
+    height: fit-content;
+    /* border: solid 1px; */
+    display: flex; flex-direction: column; align-items: center;
+    padding-bottom: 150px;
+}
+
+main .sec5 h2{
 
 }
 
+main .sec5 span .O1{
+    width: 100%;
+    /* border: solid; */
+    height: 6px; border-radius: 3px;
+    background: linear-gradient(80deg, #ff8400, #1212dc);
+    margin-top: 5px;
+}
 
+main .sec5 .posts{
+    width: 90%;
+    height: fit-content;
+    /* border: solid 1px; */
+    /* margin-top: 2.5%; */
+    display: flex; 
+    flex-direction: column; align-items: center; justify-content: center;
+    margin-top: 40px;
+}
 
+main .sec5 .posts .sp1{
+   width: 100%; height: fit-content; display: flex; flex-wrap: wrap; justify-content: space-around;
+   /* border: solid 1px; */
+}
 
+main .sec5 .posts .sp1 a{
+    width: 350px; height: 250px; 
+    /* border: solid 1px; */
+     border-radius: 6px;
+     background-image: url(pexels-expect-best-323705.jpg);
+     background-color: rgb(0, 0, 0, 0.6); 
+     background-size: cover; background-position: center;
+     background-blend-mode: overlay;
+     box-shadow: 20px 20px 30px rgba(135, 135, 135);
+     /* margin-top: 5%; */
+     margin: 0 20px;
+     margin-top: 40px;
+     /* margin-left: 20px; */
+ }
+
+main .sec5 .posts .sp2{
+    width: 96%;
+    padding: 40px 0;
+    border: solid 1px;
+    margin-top: 30px;
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    align-items: center; justify-content: space-evenly;
+}
 
 
 
@@ -331,6 +452,16 @@ main .sec4{
     main .sec3 .projects{
         width: 100%;
     }
+
+    main .sec4 .points{
+        margin-top: 40px;
+    }
+
+    main .sec4 .points span{
+        width: 98%;
+        margin-right: auto; 
+        height: 240px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -401,6 +532,8 @@ main .sec4{
         font-size: 16px;
         margin-bottom: 5%;
     }
+
+  
 }
 
 
