@@ -293,11 +293,12 @@ main .sec5 h2{
 }
 
 main .sec5 span .O1{
-    width: 100%;
+    width: 105%;
+    margin: 0 -2.5%;
     /* border: solid; */
     height: 6px; border-radius: 3px;
     background: linear-gradient(80deg, #ff8400, #1212dc);
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 main .sec5 .posts{
@@ -320,24 +321,108 @@ main .sec5 .posts .sp1 a{
     /* border: solid 1px; */
      border-radius: 6px;
      background-image: url(pexels-expect-best-323705.jpg);
-     background-color: rgb(0, 0, 0, 0.6); 
+     background-color: rgb(0, 0, 0, 0.4); 
      background-size: cover; background-position: center;
      background-blend-mode: overlay;
-     box-shadow: 20px 20px 30px rgba(135, 135, 135);
+     box-shadow: 20px 20px 40px rgb(160, 160, 160);
      /* margin-top: 5%; */
-     margin: 0 20px;
-     margin-top: 40px;
+     margin: 0 20px; display: flex; flex-direction: column;
+     margin-top: 80px;
      /* margin-left: 20px; */
- }
+     padding: 20px 20px;
+     justify-content: baseline;
+}
+
+main .sec5 .posts .sp1 a span{
+    width: 100%; height: 100%;  
+    display: flex; 
+    flex-direction: column;
+    /* margin-top: auto; */
+}
+
+main .sec5 .posts .sp1 a span p{
+    padding: 5px 15px; background: red; border-radius: 5px; color: white; font-size: 16px;
+}
+
+main .sec5 .posts .sp1 a span h3{
+    color: white; font-size: 14px; font-weight: 300;
+}
+
+main .sec5 .posts .sp1 a span h2{
+    color: white; font-size: 14px; width: fit-content; border: ; font-weight: 300; display: flex; align-items: center; margin-left: auto; margin-top: auto; width: 95px; justify-content: space-between; padding: 0 10px;
+}
+
+main .sec5 .posts .sp1 a span h1{
+    color: white; font-size: 22px; width: 100%; font-weight: 500; margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main .sec5 .posts .sp2{
     width: 96%;
-    padding: 40px 0;
-    border: solid 1px;
-    margin-top: 30px;
+    /* padding: 40px 0; */
+    /* border: solid 1px; */
+    margin-top: 6 0px;
     display: flex; flex-direction: row; flex-wrap: wrap;
-    align-items: center; justify-content: space-evenly;
+    align-items: center; justify-content: space-between;
 }
+
+main .sec5 .posts .sp2 a{
+    width: 260px; height: 80px;
+    /* border: solid 1px black; */
+}
+
+main .sec5 .posts .sp2 a .image{
+    width: 40%; height: 100%;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-image: url(desola-lanre-ologun-IAXBj6u54nU-unsplash.jpg);
+    background-size: cover; background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
