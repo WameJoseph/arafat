@@ -1,8 +1,25 @@
 body{margin: 0; padding: 0;}
 *{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; text-decoration: none; scroll-behavior: smooth;}
-header{width: 100%; padding: 15px 6%; display: flex; justify-content: space-between; align-items: center; 
-    box-shadow: 1px 5px 10px rgba(79, 79, 79, 0.5);  background: white;
-    position: sticky; top: 0;}
+
+header{width: 100%;
+    /* height: fit-content; background: black; padding: 0;
+    background: white; */
+    position: fixed;
+}
+header .o1{
+    width: 100%; height: fit-content; margin: 0; padding: 15px 6%; display: flex; justify-content: space-between; align-items: center; box-shadow: 1px 5px 10px rgba(79, 79, 79, 0.5);  background: white; position: sticky; top: 0;
+}
+
+header nav{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    /* top: 0; */
+    /* box-shadow: 10px 0 5px black; */
+    display: block;
+    display: none;
+}
 header .sp1{color: black;}
 header .sp2{
     display: flex; align-items: center; justify-content: center;
@@ -33,7 +50,7 @@ header .menu{color: black; display: none;}
 main{}
 
 main .sc1{
-    height: 76vh; border:  1px; width: 100%;  background-size: cover; background-position: center; background-color: rgb(0, 0, 255, 0.3); background-blend-mode: overlay; background-image: url(pexels-expect-best-323705.jpg); display: flex; flex-direction: column; align-items: center; justify-content: center;
+    height: 90vh; border:  1px; width: 100%;  background-size: cover; background-position: center; background-color: rgb(0, 0, 255, 0.3); background-blend-mode: overlay; background-image: url(pexels-expect-best-323705.jpg); display: flex; flex-direction: column; align-items: center; justify-content: center;
     /* background-image: url(milad-fakurian-UiiHVEyxtyA-unsplash.jpg); */
 }
 
@@ -285,7 +302,7 @@ main .sec5{
     height: fit-content;
     /* border: solid 1px; */
     display: flex; flex-direction: column; align-items: center;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 main .sec5 h2{
@@ -317,7 +334,7 @@ main .sec5 .posts .sp1{
 }
 
 main .sec5 .posts .sp1 a{
-    width: 350px; height: 250px; 
+    width: 350px; height: 300px; 
     /* border: solid 1px; */
      border-radius: 6px;
      background-image: url(pexels-expect-best-323705.jpg);
@@ -348,25 +365,60 @@ main .sec5 .posts .sp1 a span h3{
     color: white; font-size: 14px; font-weight: 300;
 }
 
-main .sec5 .posts .sp1 a span h2{
-    color: white; font-size: 14px; width: fit-content; border: ; font-weight: 300; display: flex; align-items: center; margin-left: auto; margin-top: auto; width: 95px; justify-content: space-between; padding: 0 10px;
-}
-
 main .sec5 .posts .sp1 a span h1{
     color: white; font-size: 22px; width: 100%; font-weight: 500; margin-bottom: 10px;
 }
 
+main .sec5 .posts .sp1 a span h2{
+        color: white; font-size: 14px; width: fit-content; border: ; font-weight: 300; display: flex; align-items: center; margin-left: auto; margin-top: auto; width: 95px; justify-content: space-between; padding: 0 10px; transition: 150ms;
+    /* margin-bottom: 20px; */
+}
 
+main .sec5 .posts .sp1 a span h2:hover{
+    color: white; font-size: 14px; width: fit-content; border: ; font-weight: 300; display: flex; align-items: center; margin-left: auto; margin-top: auto; width: 100px; justify-content: space-between; padding: 0 5px;
+    /* margin-bottom: 20px; */
+}
 
+.sec5 .fullblog{
+    width: 150px;
+    border: solid 1px;
+    margin-top: 100px;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 20px;
+    color: purple;
+    box-shadow: 10px 10px rgb(128, 0, 128, 0.5); transition: 150ms;
+}
 
+.sec5 .fullblog:hover{
+    width: 155px;
+    padding: 10px 15px;
+    color: purple;
+    box-shadow: 15px 15px rgb(128, 0, 128, 0.5);
+}
 
+footer{
+    width: 100%;
+    height: 60vh;
+    border-top: solid 1px silver;
+    padding: 60px 0;
+}
 
+footer .o1{
+    margin-bottom: 30px;
+}
 
+footer .o1 span{
+    width: 100%; display: flex; flex-direction: column; align-items: center; 
+    justify-content: center;
+}
 
+footer .o2{
+    width: 100%; height: 80vh; display: flex; flex-wrap: wrap; border: solid 1px black;
+}
 
-
-
-
+footer .o2 span{
+    width: 50%;border: solid 1px purple; height: 100%;
+}
 
 
 
@@ -438,7 +490,7 @@ main .sec5 .posts .sp2 a .image{
 
 
 @media screen and (max-width: 1300px) {
-    header{padding: 15px 4.5%;}
+    /* header{padding: 15px 4.5%;} */
     header .sp2 a{margin-right: 10px;}
 }
 
